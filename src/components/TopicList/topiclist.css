@@ -1,0 +1,106 @@
+
+.topic-container{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.topic-list{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    padding: 10px 25px;
+    font-size: 21px;
+    height: 4pc;
+    border: none;
+    background-color: #99b3ff;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-radius: 7px;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.topic-list:hover{
+    background-color: rgb(52, 52, 247);
+    color: white;
+}
+
+.topic-list-questions{
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(250, 211, 83);
+    margin-left: 82%;
+    margin-top: -1px;
+    border: none;
+    border: 2px solid orange;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+.topic-list-questions:hover{
+    cursor: pointer;
+   border: 2px solid white;
+    background-color: white;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    
+    font-weight: 600;
+}
+
+.header-topic{
+    position: sticky;
+    top: 0%;
+}
+
+@media only screen and (max-width: 500px){
+    .topic-list{
+        padding: 8px 20px;
+        font-size: 16px;
+        height: 3pc;
+    }
+    .topic-list-questions{
+        padding: 6px 10px;
+        margin-left: 65%;
+        margin-top: 0px;
+        font-size: 15px;
+    }
+    .header-topic{
+        font-size: 19px;
+        height: 5pc;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .topic-list-questions{
+        margin-left: 60%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .topic-list-questions{
+        margin-left: 55%;
+    }
+    .header-topic{
+        height: 4pc;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .topic-list{
+        padding: 8px 20px;
+        font-size: 14px;
+        height: 3pc;
+    }
+    .topic-list-questions{
+        margin-left: 50%;
+        font-size: 14px;
+    }
+    
+}

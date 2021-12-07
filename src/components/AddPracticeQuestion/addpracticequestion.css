@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+  
+  
+  .option-add-container{
+    /* border: 2px solid red; */
+    width: 60%;
+    /* margin-top: -12%; */
+  }
+
+  .question-box{
+    width: 70%;
+    height: 9pc;
+    display: flex;
+    justify-content: left;
+    font-size: 21px;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* border: 2px solid rgb(0, 60, 255); */
+  }
+
+  .options{
+      margin: 8px;
+      width: 40%;
+      height: 3pc;
+      font-size: 20px;
+      display: flex;
+      margin-left: 16%;
+      outline: 2px rgb(0, 0, 255);
+      /* border: 2px solid rgb(255, 0, 0); */
+
+  }
+
+  .submit-btn{
+      margin-top: 2%;
+      position: absolute;
+      padding: 8px 28px;
+      margin-left: 18%;
+      background-color: grey;
+      color: white;
+      font-size: 20px;
+      
+  }
+
+  .submit-btn:hover{
+      background-color: rgb(153, 153, 153);
+      color: black;
+      cursor: pointer;
+      outline: none;
+  }
+
+  
+
+  .select-container{
+    border: 2px solid green;
+  }
+
+  .input{
+    margin-left: 30%;
+    width: 30%;
+    height: 3pc;
+    font-size: 20px;
+    border: 2px solid red;
+  }
+
+  .click-btn{
+    margin-left: 2%;
+    margin-top: 3%;
+    padding: 9px 15px;
+    font-size: 20px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 7px;
+  }
+  
+  .click-btn:hover{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    cursor: pointer;
+  }
+
+  .header-1{
+    /* border: 2px solid black; */
+    border-radius: 6px;
+    height: 6pc;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -1px;
+    /* background-color: rgb(108, 58, 247); */
+    background: radial-gradient(rgb(46, 31, 252), rgb(180, 193, 253));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 6px rgb(48, 48, 105);
+    cursor: default;
+  }
+
+  .header-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .question-container{
+    border: 2px solid black;
+    width: 30%;
+    position: fixed;
+    height: 27pc;
+    margin-left: 67%;
+    justify-content: left;
+    background-color: white;
+
+  }
+
+ .numbering{
+   display: flex;
+   justify-content: right;
+   margin-right: 30px;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ @media only screen and (max-width: 500px){
+   .header-1{
+    height: 5pc;
+    font-size: 19px;
+    color: white;
+   }
+   .question-box{
+    width: 150%;
+    height: 9pc;
+    font-size: 17px;
+  }
+  .submit-btn{
+    margin-top: 3%;
+    margin-left: 40%;
+  }
+  
+ }
+
+ @media only screen and (max-width: 400px){
+  .header-1{
+   height: 4pc;
+   font-size: 18px;
+   color: white;
+  }
+  .question-box{
+    width: 150%;
+    height: 9pc;
+    font-size: 15px;
+  }
+  
+}
+
+@media only screen and (max-width: 350px){
+  .header-1{
+   height: 3pc;
+   font-size: 17px;
+   color: white;
+  }
+  .submit-btn{
+    font-size: 15px;
+    padding: 6px 25px;
+    margin-left: 38%;
+  }
+}

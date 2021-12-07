@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+.score-container{
+    /* border: 2px solid black; */
+    margin-top: -18px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 31%;
+    box-shadow: 0px 2px 6px black;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.score-text{
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 12px;
+    margin-top: -12px;
+    font-weight: 600;
+}
+
+.fa-arrow-circle-left{
+    margin-right: 42px;
+    font-size: 25px;
+}
+
+.fa-arrow-circle-left:hover{
+    font-size: 30px;
+}
+
+.quiz-quen-score{
+    background-color: rgb(95, 111, 250);
+    border-radius: 20px;
+    color: white;
+}
+
+.quiz-option-btn-score{
+    font-family: 'Raleway', sans-serif;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 7px 10px;
+    width: 100%;
+    margin-top: 6px;
+    border: none;
+    background: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.quiz-option-btn-score:hover{
+    /* background-color: rgb(196, 255, 173); */
+    /* background-color: #66a3ff; */
+    /* cursor: pointer; */
+    /* box-shadow: 2px 0px 5px; */
+    font-weight: bolder;
+    
+}
+
+
+@media only screen and (max-width: 500px){
+    .score-container{
+        /* border: 2px solid black; */
+        margin-top: -7px;
+        font-family: 'Raleway', sans-serif;
+        margin-left: 22%;
+        width: 60%;
+    }
+    .score-text{
+        font-size: 14px;
+        padding: 10px 12px;
+        margin-top: -12px;
+        font-weight: 600;
+    }
+    .quiz-option-btn-score{
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+    .fa-arrow-circle-left{
+        margin-right: 32px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .score-container{
+        /* border: 2px solid black; */
+        margin-top: -4px;
+        font-family: 'Raleway', sans-serif;
+        margin-left: 18%;
+        width: 70%;
+    }
+    .score-text{
+        font-size: 13px;
+        padding: 8px 10px;
+        margin-top: -12px;
+        font-weight: 600;
+    }
+    .fa-arrow-circle-left{
+        margin-right: 32px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .score-container{
+        /* border: 2px solid black; */
+        margin-top: 16px;
+        font-family: 'Raleway', sans-serif;
+        margin-left: 16%;
+        width: 70%;
+    }
+    .score-text{
+        font-size: 12px;
+        padding: 8px 10px;
+        margin-top: -12px;
+    }
+    .fa-arrow-circle-left{
+        margin-right: 22px;
+        font-size: 17px;
+    }
+    .quiz-option-btn-score{
+        font-size: 11px;
+    }
+}

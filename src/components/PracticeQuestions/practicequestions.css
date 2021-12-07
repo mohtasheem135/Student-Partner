@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.question-answer-box{
+    /* border: 2px solid red; */
+}
+
+.question-answer-box:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 6px black;
+}
+
+
+.practice-question{
+    /* border: 2px solid black; */
+    padding: 12px 7px;
+    background-color: sandybrown;
+    font-family: 'Raleway', sans-serif;
+}
+
+.practice-question:hover{
+
+}
+
+.practice-answer{
+    /* border: 2px solid red; */
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(250, 213, 181);
+    padding: 12px 7px;
+    margin-top: -20px;
+}
+
+.practice-answer:hover{
+    box-shadow: 0px 2px 6px black;
+    /* font-weight: 600; */
+}
+
+.header-practice-questions{
+    position: sticky;
+    top: 0%;
+}
+
+@media only screen and (max-width: 500px){
+    .header-practice-questions{
+        font-size: 18px;
+        color: white;
+    }
+    .practice-question{
+        padding: 12px 7px;
+        font-size: 17px;
+    }
+    .practice-answer{
+        font-size: 18px;
+        padding: 12px 7px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .header-practice-questions{
+        font-size: 16px;
+        color: white;
+    }
+    .practice-question{
+        padding: 12px 7px;
+        font-size: 15px;
+    }
+    .practice-answer{
+        font-size: 16px;
+        padding: 12px 7px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .header-practice-questions{
+        font-size: 14px;
+        color: white;
+    }
+    .practice-question{
+        padding: 12px 7px;
+        font-size: 14px;
+    }
+    .practice-answer{
+        font-size: 14px;
+        padding: 12px 7px;
+    }
+}

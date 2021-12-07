@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+
+
+.home-container{
+    
+}
+
+.study-home-image{
+    display: flex;
+}
+
+.image{
+    /* display: flex; */
+    width: 100vh;
+    height: 85vh;
+    /* border: 2px solid black; */
+}
+
+.about-missioned{
+    /* border: 2px solid yellow; */
+    margin-top: 8%;
+    height: 24pc;
+    cursor: default;
+
+}
+
+.style-p{
+    display: inline;
+    color: green;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.missioned-h3{
+    
+/* border: 2px solid green; */
+padding: 12px 42px;
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Source Sans Pro', sans-serif; */
+font-family: 'Fuzzy Bubbles', cursive;
+font-size: 25px;
+cursor: default;
+font-weight: bolder;
+}
+
+.missioned-p{
+    /* border: 2px solid red; */
+    padding: 42px 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 700px){
+    
+.about-missioned{
+    /* border: 2px solid yellow; */
+    margin-top: 4%;
+    height: 16pc;
+
+}
+
+.missioned-h3{
+    
+    /* border: 2px solid green; */
+    padding: 2px 12px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    margin-top: 0px;
+    }
+
+.missioned-p{
+    /* border: 2px solid red; */
+    padding: 12px 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: -12px;
+}
+}
+
+
+
+
+
+@media only screen and (max-width: 500px){
+
+    .image{
+        width: 60vh;
+        height: 50vh;
+        
+    }
+
+    .study-home-image{
+        display: inline;
+    }
+
+    .about-missioned{
+        /* border: 2px solid yellow; */
+        height: 14pc;
+    }
+}
+
+
+
+@media only screen and (max-width: 440px){
+    .image{
+        width: 45vh;
+        height: 35vh;
+        
+    }
+
+    .about-missioned{
+        margin-top: -3px;
+    }
+
+    .missioned-h3{
+        margin-top: 3px;
+        }
+
+    .missioned-p{
+        padding: 8px 12px;
+        font-size: 16px;
+        margin-top: -15px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .image{
+        width: 55vh;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .image{
+        width: 45vh;
+        height: 40vh;
+    }
+}
+
+/* @media only screen and (max-width: 768px){
+    .study-home-image{
+        display: inline;
+    }
+    .image{
+        width: 70vh;
+        height: 60vh;
+    }
+    .about-missioned{
+        margin-top: -6px;
+    }
+    .missioned-h3{
+    }
+    .missioned-p{
+        padding: 8px 12px;
+        font-size: 20px;
+        margin-top: -15px;
+    }
+} */
+
+
+
+

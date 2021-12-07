@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+.practice-set-container{
+    width: 23%;
+    text-align: center;
+    height: 18pc;
+    border: 2px solid #20A1E6 ;
+    margin-left: 40%;
+    margin-top: 2%;
+    transition: all 0.5s;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 7px;
+    /* background: linear-gradient(rgb(255, 177, 74), rgb(81, 162, 255)); */
+    background: radial-gradient(#33ff99,rgb(81, 162, 255));
+}
+
+.practice-set-container:hover{
+    box-shadow: 0px 2px 12px #20A1E6 ;
+    transition: all 0.5s;
+    background: linear-gradient(rgb(81, 162, 255), #33ff99);
+}
+
+
+.practice-set-topic{
+    cursor: default;
+    font-size: 21px;
+}
+
+.practice-set-btn{
+    padding: 11px 17px;
+    font-size: 17px;
+    margin-top: 40%;
+    background-color: rgb(219, 219, 219);
+    color: black;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    border: none;
+    box-shadow: 2px 1px 5px black;
+    border-radius: 4px;
+}
+
+.practice-set-btn:hover{
+    cursor: pointer;
+    background-color: #000000 ;
+    color: white;
+    font-weight: 500;
+}
+
+.header-practice{
+    position: sticky;
+    top: 0%;
+}
+
+@media only screen and (max-width: 500px){
+    .practice-set-container{
+        width: 53%;
+        margin-left: 25%;
+    }
+    .practice-set-btn{
+        padding: 8px 14px;
+        font-size: 16px;
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .practice-set-container{
+        width: 63%;
+        margin-left: 20%;
+        height: 16pc;
+    }
+    
+    .practice-set-btn{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .practice-set-container{
+        width: 65%;
+        margin-left: 19%;
+        height: 15pc;
+    }
+}
+
+

@@ -1,0 +1,21 @@
+.options{
+    width: 40%;
+}
+
+@media only screen and (max-width: 500px){
+    .options{
+        width: 120%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .options{
+        width: 140%;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .options{
+        width: 160%;
+    }
+}
