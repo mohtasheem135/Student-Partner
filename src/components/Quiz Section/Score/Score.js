@@ -4,6 +4,7 @@ import { DataNavigation } from 'react-data-navigation';
 import { useNavigate } from 'react-router';
 import firebaseDB from '../../../firebase';
 import 'font-awesome/css/font-awesome.min.css';
+// import { useNavigate } from 'react-router';
 
 const Score = () => {
     const navigate = useNavigate();
@@ -17,11 +18,11 @@ const Score = () => {
 
 
     useEffect(() => {
-        setQuizName(DataNavigation.getData('name'))
-        
+        setQuizName(localStorage.getItem('quizName'))
+
         //  console.log(quizName)
 
-        firebaseDB.child(`Quiz Folder`).child(`Quiz Score`).child(`${DataNavigation.getData('name')}_Result-${dd}-${mm}`).child(`${DataNavigation.getData('user_name')}`).child("Correct-Answers").push(DataNavigation.getData('score'), (err) => {
+        firebaseDB.child(`Quiz Folder`).child(`Quiz Score`).child(`${localStorage.getItem('quizName')}_Result-${dd}-${mm}`).child(`${DataNavigation.getData('user_name')}`).child("Correct-Answers").push(DataNavigation.getData('score'), (err) => {
             if (err) {
                 console.log(err);
             }
@@ -31,13 +32,11 @@ const Score = () => {
         console.log(DataNavigation.getData('user_answer_id'));
 
 
-        firebaseDB.child(`Quiz Folder`).child(`Quiz Questions`).child(`${DataNavigation.getData('name')}`).on("value", (snapshot) => {
+        firebaseDB.child(`Quiz Folder`).child(`Quiz Questions`).child(`${localStorage.getItem('quizName')}`).on("value", (snapshot) => {
             if (snapshot.val() != null) {
                 setDataValue({
                     ...snapshot.val()
                 })
-            } else {
-                snapshot({});
             }
         })
         // {Object.keys(dataValue).map((id, index)=>{
@@ -55,7 +54,7 @@ const Score = () => {
         // })
         // console.log(userAnswer)
     }, [])
-    
+
 
     var a = 0;
     function jump() {
@@ -64,21 +63,22 @@ const Score = () => {
 
     return (
         <>
-        <h1 className="header-1"> {DataNavigation.getData('user_name')}'s Score Card</h1>
+            {/* {localStorage.getItem('Admin_Name') != "" ? null : navigate("/error")} */}
+            <h1 className="header-1"> {DataNavigation.getData('user_name')}'s Score Card</h1>
             <div className="score-container">
                 {/* <h3 className="header-1">{DataNavigation.getData('user_answer_id')}</h3> */}
-                
+
                 <p className="score-text">Total Marks :- {DataNavigation.getData('score')}/{DataNavigation.getData('total_question')}</p>
                 <p className="score-text">Correct Answers  :- {DataNavigation.getData('score')} </p>
-                <p className="score-text">Wrong Answer :- {DataNavigation.getData('attempt') - DataNavigation.getData('score')}</p>
+                <p className="score-text">Wrong / Unattempted  :- {DataNavigation.getData('total_question') - DataNavigation.getData('score')}</p>
                 <p className="score-text">Total Number of Questions :- {DataNavigation.getData('total_question')}</p>
-                <p className="score-text">Attempted Questions   :- {DataNavigation.getData('attempt')}</p>
-                <p className="score-text">Unattempted Questions   :- {DataNavigation.getData('total_question') - DataNavigation.getData('attempt')}</p>
-                
-               
+                {/* <p className="score-text">Attempted Questions   :- {DataNavigation.getData('attempt')}</p> */}
+                {/* <p className="score-text">Unattempted Questions   :- {DataNavigation.getData('total_question') - DataNavigation.getData('attempt')}</p> */}
+
+
             </div>
-            <button onClick={jump} className="quiz-submit-btn"><i class="fas fa-arrow-circle-left"></i>Go to Quiz Sets</button><br/><br/><br/>
-            
+            <button onClick={jump} className="quiz-submit-btn"><i class="fas fa-arrow-circle-left"></i>Go to Quiz Sets</button><br /><br /><br />
+
             <h1 className="header-1">Answer Key</h1>
 
             {Object.keys(dataValue).map((id, index) => {
@@ -111,7 +111,7 @@ const Score = () => {
 
                 )
             })}
-             <button onClick={jump} className="quiz-submit-btn"><i class="fas fa-arrow-circle-left"></i>Go to Quiz Sets</button>
+            <button onClick={jump} className="quiz-submit-btn"><i class="fas fa-arrow-circle-left"></i>Go to Quiz Sets</button>
         </>
     )
 }

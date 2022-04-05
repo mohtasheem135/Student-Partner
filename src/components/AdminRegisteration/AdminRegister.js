@@ -52,7 +52,7 @@ const AdminRegister = () => {
                 <div className="login-input-container">
                     <form className="login-form">
                         <input className="input-login" name="name" type="text" placeholder="Enter Full Name" onChange={handelInputChange} />
-                        <input className="input-login" name="email" type="email" placeholder="Enter Email                                     .com" onChange={handelInputChange} /><label className="label">.com</label>
+                        <input className="input-login" name="email" type="email" placeholder="Enter Email" onChange={handelInputChange} />
                         <input className="input-login" name="password" type="password" placeholder="Enter Password" onChange={handelInputChange} />
                         <input onClick={handelSubmit} className="input-login input-btn" type="submit" value="Register" />
                         <input onClick={register} className="input-login input-btn" type="submit" value="LogIn" />

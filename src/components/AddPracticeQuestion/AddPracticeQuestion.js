@@ -53,7 +53,8 @@ const AddPracticeQuestion = () => {
 
     return (
         <div>
-            <NavbarAdmin/>
+             {localStorage.getItem('Admin_Name') !== "" ? null : navigate("/error")}
+            <NavbarAdmin />
             <p></p>
           
             <h2 className="header-1">{DataNavigation.getData('practice_question_set')} - {DataNavigation.getData('practice_question_topic')} </h2>

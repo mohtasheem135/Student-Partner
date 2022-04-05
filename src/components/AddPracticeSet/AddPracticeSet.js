@@ -112,6 +112,7 @@ var y=0;
 
     return (
         <div>
+             {localStorage.getItem('Admin_Name') !== "" ? null : navigate("/error")}
             <NavbarAdmin />
             <p className="header-set ">Add Practice Sets Here</p>
             <div className="admin-login-body add-set-container">

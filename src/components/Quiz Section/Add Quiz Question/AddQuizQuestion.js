@@ -14,13 +14,13 @@ const AddQuizQuestion = () => {
 
     const [text, setText] = useState("");
     const [ques, setQues] = useState("");
-    const [quizName, setQuizName] = useState("");
+    // const [quizName, setQuizName] = useState("");
     const [value2, setValue2] = useState("");
 
-    useEffect(()=>{
-        // console.log(DataNavigation.getData('quiz_name'))
-        setQuizName(DataNavigation.getData('quiz_name'))
-    })
+    // useEffect(()=>{
+    //     // console.log(DataNavigation.getData('quiz_name'))
+    //     setQuizName(DataNavigation.getData('quiz_name'))
+    // })
 
 function getData(e) {
        
@@ -42,7 +42,7 @@ function getData(e) {
 
     const handelSubmit = (e) => {
         e.preventDefault()
-        firebaseDB.child(`Quiz Folder`).child(`Quiz Questions`).child(`${quizName}`).push(initialState, (err) => {
+        firebaseDB.child(`Quiz Folder`).child(`Quiz Questions`).child(`${localStorage.getItem('Quiz_Name')}`).push(initialState, (err) => {
             if (err) {
                 console.log(err);
             }
@@ -82,10 +82,11 @@ function getData(e) {
     return (
         <div>
             <div>
+            {localStorage.getItem('Admin_Name') != "" ? null : navigate("/error")}
                 <NavbarAdmin/>
                 
                 {/* <h2>{DataNavigation.getData('number')} Questions have been added</h2> */}
-                <h2 className="header-1">Adding the Questions to "{quizName}"</h2>
+                <h2 className="header-1">Adding the Questions to "{localStorage.getItem('Quiz_Name')}"</h2>
                 <h3 className="numbering" >{num} Question's added</h3>
                 <div className="App">
                     {/* <div className="question-container">

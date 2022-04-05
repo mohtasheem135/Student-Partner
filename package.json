@@ -13,10 +13,12 @@
     "font-awesome": "^4.7.0",
     "generate-unique-id": "^2.0.1",
     "react": "^17.0.2",
+    "react-countdown": "^2.3.2",
     "react-data-navigation": "^1.0.0",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
+    "react-timer-hook": "^3.0.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

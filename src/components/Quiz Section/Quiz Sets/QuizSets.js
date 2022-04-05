@@ -32,7 +32,8 @@ const QuizSets = () => {
     const [selectedNumber, setSelectedNumber] = useState("");
     const selectNumber=(e) => {
         setSelectedNumber(e.target.value);
-        DataNavigation.setData('name', e.target.value); 
+        DataNavigation.setData('name', e.target.value);
+        localStorage.setItem("quizName", e.target.value) 
         // navigate("quizpage")
         navigate("/usercheck")
     }

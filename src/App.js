@@ -13,9 +13,11 @@ import AddQuizQuestion from "./components/Quiz Section/Add Quiz Question/AddQuiz
 import AddQuiz from "./components/Quiz Section/AddQuiz/AddQuiz";
 import QuizPage from "./components/Quiz Section/Quiz Page/QuizPage";
 import QuizSets from "./components/Quiz Section/Quiz Sets/QuizSets";
+import RankList from "./components/Quiz Section/Rank List/RankList";
 import Score from "./components/Quiz Section/Score/Score";
 import UserCheck from "./components/Quiz Section/User Check/UserCheck";
 import TopicList from "./components/TopicList/TopicList";
+import Error from "./components/Error/Error";
 
 
 
@@ -38,11 +40,13 @@ function App() {
       <Route path="/addquiz/addquizquestion" element={<AddQuizQuestion/>} />
       <Route path="/addquizquestion" element={<AddQuizQuestion/>} />
       <Route path="/quizsets/quizpage" element={<QuizPage/>} />
-      <Route path="/quizsets/quizpage/score" element={<Score/>} />
+      <Route path="/score" element={<Score/>} />
       <Route path="/quizsets" element={<QuizSets/>} />
       <Route path="/usercheck" element={<UserCheck/>} />
       <Route path="/usercheck/quizpage" element={<QuizPage/>} />
       <Route path="/usercheck/quizpage/score" element={<Score/>} />
+      <Route path="/rank" element={<RankList/>} />
+      <Route path="/error" element={<Error/>} />
       
       
       </Routes>

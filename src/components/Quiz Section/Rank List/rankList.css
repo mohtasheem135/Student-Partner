@@ -1,0 +1,39 @@
+
+
+.rank_list{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(255, 154, 39);
+}
+
+.rank_name{
+    /* display: flex;
+    justify-content: left; */
+    margin-left: 240px; 
+}
+
+.rank_score{
+    /* display: flex;
+    justify-content: right; */
+    margin-right: 240px;
+}
+
+.rank_btn-1{
+    padding: 12px;
+    border: none;
+    box-shadow: 2px 1px 6px grey;
+    margin-left: 12px;
+    border-radius: 4px;
+}
+
+.rank-btn-container{
+    display: contents;
+    font-size: 24px;
+}
+
+.rank_btn-1:hover{
+    border-bottom: 2px solid rgb(30, 63, 250);
+    cursor: pointer;
+    box-shadow: 2px 1px 6px rgb(49, 114, 255);
+}
