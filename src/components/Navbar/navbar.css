@@ -91,32 +91,42 @@
 }
 
 @media only screen and (max-width: 400px){
+    .nav-li{
+        margin-left: 8px;
+    }
 
+    .nav-li a{
+        font-size: 14px;
+    }
+
+    .nav-login-li a{
+        font-size: 14px;
+    }
    
 }
 
 @media only screen and (max-width: 380px){
     .nav-li{
-        margin-left: 10px;
+        margin-left: 8px;
     }
 
     .nav-li a{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .nav-login-li a{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .nav-login-li {
         border-left: 1px solid white;
-        padding: 0px 5px;
+        padding: 0px 7px;
     }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 360px){
     .nav-li{
-        margin-left: 10px;
+        margin-left: 6px;
     }
 
     .nav-li a{
@@ -129,6 +139,6 @@
 
     .nav-login-li {
         border-left: 1px solid white;
-        padding: 0px 3px;
+        padding: 0px 9px;
     }
 }

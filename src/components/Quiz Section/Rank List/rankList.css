@@ -37,3 +37,33 @@
     cursor: pointer;
     box-shadow: 2px 1px 6px rgb(49, 114, 255);
 }
+
+@media only screen and (max-width: 700px){
+    .rank_name{
+        margin-left: 140px; 
+    }
+    
+    .rank_score{
+        margin-right: 140px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .rank_name{
+        margin-left: 80px; 
+    }
+    
+    .rank_score{
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .rank_name{
+        margin-left: 50px; 
+    }
+    
+    .rank_score{
+        margin-right: 50px;
+    }
+}

@@ -25,7 +25,7 @@ const QuizShop = () => {
         // console.log(DataNavigation.getData('name'));
         //  console.log(quizName)
 
-        console.log("jwndsnc"+localStorage.getItem('Quiz_Name'))
+        console.log("jwndsnc" + localStorage.getItem('Quiz_Name'))
 
 
 
@@ -48,16 +48,16 @@ const QuizShop = () => {
                 snapshot({});
             }
         })
-        
-        
+
+
     }, [])
     console.log(timeData.Time)
     console.log(Object.keys(dataValue).length)
     DataNavigation.setData('total_question', Object.keys(dataValue).length);
 
-    var m = timeData.Time*60
+    var m = timeData.Time * 60
     const time = new Date();
-    
+
     time.setSeconds(300)
 
     // function MyTimer({ expiryTimestamp }) {
@@ -84,9 +84,9 @@ const QuizShop = () => {
     //     return(
     //         <div className='timer'>
     //             <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
-                
+
     //         </div>
-            
+
     //     )
     // }
 
@@ -124,7 +124,7 @@ const QuizShop = () => {
         DataNavigation.setData('name', "");
         navigate("/score")
 
-        firebaseDB.child(`Quiz Folder`).child(`Quiz Results`).child(`${localStorage.getItem('quizName')})}`).child(`${DataNavigation.getData('user_name')}`).set({ name: `${DataNavigation.getData('user_name')}`, email: `${DataNavigation.getData('user_email')}`, score: `${num}` }, (err) => {
+        firebaseDB.child(`Quiz Folder`).child(`Quiz Results`).child(`${localStorage.getItem('quizName')}`).child(`${DataNavigation.getData('user_name')}`).set({ name: `${DataNavigation.getData('user_name')}`, email: `${DataNavigation.getData('user_email')}`, score: `${num}` }, (err) => {
             if (err) {
                 console.log(err);
             }
@@ -136,12 +136,12 @@ const QuizShop = () => {
 
     // }
 
-   
+
     return (
         <div>
             <h2 className="header-1 sticky-header">{quizName}</h2>
-            <hr/>
-            
+            <hr />
+
             {/* <MyTimer expiryTimestamp={time} /> */}
             <button className="quiz-submit-btn-top" onClick={finalScore}>submit<i class="fas fa-chevron-circle-right"></i></button>
 
